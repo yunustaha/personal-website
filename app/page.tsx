@@ -3,16 +3,16 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main >
-      <div className="relative flex items-center justify-center gap-16 mt-10">
+      <div className="relative flex flex-col lg:flex-row items-center justify-center gap-16 mt-0 lg:mt-10">
         <Image
           width="0"
           height="0"
           sizes="100vw"
-          className="w-48 h-48 rounded-full overflow-hidden"
+          className="w-56 h-56 rounded-full overflow-hidden"
           alt='Yunus Taha Yılmaz'
           src={'/images/profile.jpeg'}
         />
-        <div className="flex flex-col items-center gap-6 w-2/5">
+        <div className="flex flex-col items-center gap-6 w-4/5 lg:w-2/5">
           <div className="flex flex-col w-full justify-start shine text-2xl text-title leading-snug">
             <h2 className="font-semibold">{"Merhaba, Ben Yunus 👋"}</h2>
             <p>

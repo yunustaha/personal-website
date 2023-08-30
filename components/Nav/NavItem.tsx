@@ -7,14 +7,15 @@ type NavItemProps = {
   className?: string,
   href: string,
   label: string,
+  onClick?: (pathName: string) => void
 }
 
-const NavItem: React.FC<NavItemProps> = ({ className, href, label }) => {
+const NavItem: React.FC<NavItemProps> = ({ className, href, label, onClick }) => {
   const pathName = usePathname();
 
   return (
     <li>
-      <Link className={classNames('nav-item', pathName == href ? 'brightness-[.25]' : '', className)} href={href}>
+      <Link className={classNames('nav-item', pathName == href ? 'brightness-[.25]' : '', className)} onClick={() => onClick ? onClick(pathName) : void 0} href={href}>
         {label}
       </Link>
     </li>
