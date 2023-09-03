@@ -6,7 +6,7 @@ function Layout({
     children: React.ReactNode
 }) {
     return (
-        <div className='mx-auto w-3/5'>
+        <div className='mx-auto w-4/5 lg:w-3/5'>
             {children}
         </div>
     )
