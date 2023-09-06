@@ -15,7 +15,7 @@ type ProjectCard = {
 
 const ProjectCard: React.FC<ProjectCard> = ({ title, description, imgUrls, gitHubUrl, liveUrl }) => {
     return (
-        <div className='relative flex flex-col gap-8'>
+        <article className='relative flex flex-col gap-8'>
             <h1 className='text-title text-2xl font-semibold' >{title}</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 {imgUrls.map(
@@ -39,7 +39,7 @@ const ProjectCard: React.FC<ProjectCard> = ({ title, description, imgUrls, gitHu
                 {gitHubUrl && <IconCard icon={<BsGithub size={24} />} description={'GitHub'} href={gitHubUrl} />}
                 {liveUrl && <IconCard icon={<TbWorldWww size={24} />} description={'Canlı Link'} href={liveUrl} />}
             </div>
-        </div>
+        </article>
     )
 }
 

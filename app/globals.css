@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply flex flex-col gap-12 min-h-screen bg-white text-paragraph antialiased
+    @apply flex flex-col gap-10 min-h-screen bg-white text-paragraph antialiased
 }
 
 @layer components {

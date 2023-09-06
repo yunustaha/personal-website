@@ -4,7 +4,7 @@ import IconButton from './IconButton'
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col-reverse lg:flex-row gap-10 lg:gap-48 justify-center items-center font-light my-8'>
+    <footer className='flex flex-col-reverse lg:flex-row gap-6 lg:gap-48 justify-center items-center font-light'>
       <div className='text-xs md:text-sm lg:text-base'>
         <span>Bu web sitesinin kaynak kodlarına</span>
         <a className='mx-1 underline font-medium hover:brightness-[.25]' href='https://github.com/yunustaha/personal-website' target="_blank">GitHub üzerinden</a>
