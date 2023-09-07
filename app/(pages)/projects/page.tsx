@@ -13,6 +13,7 @@ const Projects = () => {
         imgUrls={['/projects/sportwithai.webp']}
         gitHubUrl='https://github.com/yunustaha/sport-with-ai-monorepo'
       />
+      <ProjectCard title={'FieldCo CRM'} description={'İklimsa için FieldCo ekibi olarak CRM uygulaması oluşturduk, projenin mobil kısmını Flutter kullanarak oluşturmaya odaklandım.'} imgUrls={['/projects/fieldcocrm.webp']} liveUrl={'https://play.google.com/store/apps/details?id=com.mobim.fieldco_mobil_flutter&hl=tr&gl=US'} />
     </main>
   )
 }
