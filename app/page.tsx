@@ -16,7 +16,7 @@ export default function Home() {
           <div className="flex flex-col w-full justify-start shine text-2xl text-title leading-snug">
             <h2 className="font-semibold">{"Merhaba, Ben Yunus 👋"}</h2>
             <p>
-              {"İstanbul'un enerjisiyle beslenen bir ön yüz geliştiriciyim."}
+              {"İstanbul'da yaşayan bir ön yüz geliştiriciyim."}
             </p>
           </div>
           <div className="flex flex-col gap-6 text-xl">
