@@ -3,11 +3,11 @@ const nextConfig = {
     //Path'te sayfayi yenilediginde o path'i acmasini sagliyor.
     trailingSlash: true,
     //build alirken static html dosyasi vermesi icin.
-    output: 'export',
+    // output: 'export',
     //resimlerin build sonrasi gorunmesi icin.
-    images: {
-        unoptimized: true
-    },
+    // images: {
+    //     unoptimized: true
+    // },
 }
 
 module.exports = nextConfig
