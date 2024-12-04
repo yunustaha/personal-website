@@ -5,9 +5,10 @@ const nextConfig = {
     //build alirken static html dosyasi vermesi icin.
     // output: 'export',
     //resimlerin build sonrasi gorunmesi icin.
-    // images: {
+    images: {
+        domains: ['images.unsplash.com']
     //     unoptimized: true
-    // },
+    },
 }
 
 module.exports = nextConfig
