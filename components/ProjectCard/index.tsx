@@ -1,19 +1,21 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import IconCard from './IconCard'
+import IconCard from '../IconCard'
 import { BsGithub } from 'react-icons/bs'
 import { TbWorldWww } from 'react-icons/tb'
+import TechStack from './TechStack'
 
 type ProjectCard = {
     title: string,
     description: string,
     imgUrls: Array<string>,
     gitHubUrl?: string,
-    liveUrl?: string
+    liveUrl?: string,
+    techStacks?: Array<string>
 }
 
-const ProjectCard: React.FC<ProjectCard> = ({ title, description, imgUrls, gitHubUrl, liveUrl }) => {
+const ProjectCard: React.FC<ProjectCard> = ({ title, description, imgUrls, gitHubUrl, liveUrl, techStacks }) => {
     return (
         <article className='relative flex flex-col gap-8'>
             <h1 className='text-title text-2xl font-semibold' >{title}</h1>
@@ -35,6 +37,7 @@ const ProjectCard: React.FC<ProjectCard> = ({ title, description, imgUrls, gitHu
                 )}
             </div>
             <p>{description}</p>
+            {techStacks && <TechStack techStacks={techStacks} />}
             <div className='flex gap-4'>
                 {gitHubUrl && <IconCard icon={<BsGithub size={24} />} description={'GitHub'} href={gitHubUrl} />}
                 {liveUrl && <IconCard icon={<TbWorldWww size={24} />} description={'Canlı Link'} href={liveUrl} />}
