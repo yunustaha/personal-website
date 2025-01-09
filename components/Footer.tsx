@@ -14,7 +14,7 @@ const Footer = () => {
         <IconButton url='https://www.instagram.com/yunustaha1/' >
           <FaInstagram />
         </IconButton>
-        <IconButton url='https://www.linkedin.com/feed/'>
+        <IconButton url='https://www.linkedin.com/in/yunustahayilmaz/'>
           <FaLinkedin />
         </IconButton>
       </div>
